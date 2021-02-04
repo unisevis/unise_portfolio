@@ -1,4 +1,4 @@
-## Practice project
+# Practice project
 [Practice DataCamp project: The discovery of handwashing](https://nbviewer.jupyter.org/github/unisevis/unise_portfolio/blob/main/datacamp%20projects/Dr.%20Semmelweis%20and%20theDiscovery%20of%20Handwashing.ipynb)
 
 ---
