@@ -1,3 +1,8 @@
+## Practice project
+[Practice DataCamp project: The discovery of handwashing](https://nbviewer.jupyter.org/github/unisevis/unise_portfolio/blob/main/datacamp%20projects/Dr.%20Semmelweis%20and%20theDiscovery%20of%20Handwashing.ipynb)
+
+---
+
 # Current project: Is VR game an appropriate tool to measure children's wayfinding skills?
 This is my thesis project that examines whether the Congolese children's wayfinding skills can be more conveniently assessed with a virtual reality game. Working with research teams in the United States, Germany, and the Netherlands, my task is to find the answer by digging into the data avaiable. 
 
@@ -61,7 +66,3 @@ write.csv(t,"/~/.csv", row.names = FALSE)
 
 <img src="https://github.com/unisevis/unise_portfolio/blob/main/images/mod2%20Intx%20trial%20and%20session.png" width="400" height="300">
 
----
-
-## Other project
-[Practice DataCamp project: The discovery of handwashing](https://nbviewer.jupyter.org/github/unisevis/unise_portfolio/blob/main/datacamp%20projects/Dr.%20Semmelweis%20and%20theDiscovery%20of%20Handwashing.ipynb)
