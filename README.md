@@ -1,7 +1,7 @@
-# Project 1: Is virtual reality game a valid and reliable tool to measure children's navigation skills?
-This is my thesis project that examines whether the Congolese children's navigation skills can be more conveniently assessed with a virtual reality game. Working with research teams in the United States, Germany, and the Netherlands, my task is to find the answer by digging into the data avaiable. 
+## Project 1: Is VR game an appropriate tool to measure children's wayfinding skills?
+This is my thesis project that examines whether the Congolese children's wayfinding skills can be more conveniently assessed with a virtual reality game. Working with research teams in the United States, Germany, and the Netherlands, my task is to find the answer by digging into the data avaiable. 
 
-Technology used: R (dplyr, ggplot, ggeffect, lmer, glmmTMB, car, sjplot), Excel (pivot), powerBI (dashboard)
+Technology used: R (dplyr, ggplot, ggeffect, lmer, glmmTMB, car, sjplot), Excel (pivot), powerBI.
 
 Step 1 define
 - Researched factors affecting navigation skills.
