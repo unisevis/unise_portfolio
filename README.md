@@ -61,10 +61,7 @@ write.csv(t,"/~/.csv", row.names = FALSE)
 
 <img src="https://github.com/unisevis/unise_portfolio/blob/main/images/mod2%20Intx%20trial%20and%20session.png" width="400" height="300">
 
-
-
 ---
 
-
-# Other project
-[Datacamp practice project: The discovery of handwashing](https://github.com/unisevis/unise_portfolio/blob/main/datacamp%20projects/Dr.%20Semmelweis%20and%20theDiscovery%20of%20Handwashing.ipynb)
+## Other project
+[Practice DataCamp project](https://nbviewer.jupyter.org/github/unisevis/unise_portfolio/blob/main/datacamp%20projects/Dr.%20Semmelweis%20and%20theDiscovery%20of%20Handwashing.ipynb)
