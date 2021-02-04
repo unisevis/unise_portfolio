@@ -16,7 +16,7 @@ Step 2 data preprocessing
 Step 3 exploratory data analysis
 - Visualized raw data with an overview dashboard with PowerBI to obtain better understanding.
 
-<img src="https://github.com/unisevis/unise_portfolio/blob/main/images/example%20power%20bi%20dashboard.png" width="600" height="350">
+<img src="https://github.com/unisevis/unise_portfolio/blob/main/images/example%20power%20bi%20dashboard.png" width="550" height="300">
 
 Step 4 data analysis (R)
 - Checked model assumptions with plots.
@@ -25,3 +25,5 @@ Step 4 data analysis (R)
 Step 5 data visualization and communicating results
 - Visualized model results using ggeffect package in R
 - Created summary tables of important statistics
+
+<img src="https://github.com/unisevis/unise_portfolio/blob/main/images/mod2%20Intx%20trial%20and%20session.png" width="400" height="300">
