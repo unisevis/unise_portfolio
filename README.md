@@ -11,7 +11,40 @@ Step 2 data preprocessing
 - Cleaned data to maintain good data quality.
 - Aggregated variables from master .csv file in Excel (pivot table) and R (dplyr).
 
-<img src= "https://github.com/unisevis/unise_portfolio/blob/main/images/example%20r%20code%20data%20wrangling.png" width="700" height="350">
+<details>
+  <summary>Click to see sample code</summary>
+  
+```r
+library(dplyr)
+
+setwd("/~/")
+
+data=read.csv(file="/~/.csv", fileEncoding="UTF-8-BOM") #importing data
+
+touch_exp = c("A,S,D,F,G,H,J,K,L") # names of participants whose data points need recoding 
+  
+t=data %>% select(tribe = TRIBE, name = NAME, subj = SUBJ_ID, age = Age_2019, sex = Sex, 
+                  stage = STAGE_NAME, sess_name = SESS_NAME, trial = TRIAL, status = STATUS, 
+                  time = TRAVEL_TIME, SESS_DESC, dist = OPTIMAL_DIST_BFC)  #selecting variables
+  filter(stage != "Exploration", #filtering out unwanted data
+         trial != "4") %>%  
+  mutate(is_st3 = stage=="Stage3", #create new variables based on existing variables
+         is_tr3 = trial == "3",
+         st3tr3 = is_st3*is_tr3) %>%
+  filter(st3tr3 !=1) %>%  #filtering out unwanted data
+  mutate(stage_num = as.integer(gsub(pattern = "Stage", replacement ="", x = stage))) %>% #re-coded values
+  mutate(ses_num = as.numeric(c("A"="1", "B"="2","C"="3")[sess_name])) %>% #make character values integer
+  group_by(tribe, name, stage, ses_num, trial) %>% #grouping data by variable
+  mutate(is_touch = name %in% touch_exp,  
+         is_st1 = stage =="Stage1",  
+         session = ses_num+(is_touch*is_st1)) %>% #calculate new variable
+  ungroup()%>%
+  select(tribe, name, subj, age, sex, stage_num, session, trial, dist, status, time, st3tr3, is_touch, is_st1)
+  #choose variables to be included in the new data frame
+
+write.csv(t,"/~/.csv", row.names = FALSE) 
+```
+</details>
 
 Step 3 exploratory data analysis
 - Visualized raw data with an overview dashboard with PowerBI to obtain better understanding.
